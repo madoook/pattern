@@ -23,12 +23,3 @@ class Observer {
         this.behavior( msg )
     }
 }
-
-const obsertable = new Observable()
-let observerOne = new Observer( msg => {console.log('1',msg)})
-let observerSecond = new Observer( msg => {console.log('2',msg)})
-obsertable.addObserver(observerOne)
-obsertable.addObserver(observerSecond)
-obsertable.sendMessages('send')
-
-
